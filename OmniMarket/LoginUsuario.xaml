@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OmniMarket.LoginUsuario"
+             BackgroundColor="#0E0E0E">
+
+    <ScrollView>
+        <Grid RowDefinitions="*,Auto"
+              Padding="24">
+
+            <!-- CONTEÚDO CENTRAL -->
+            <VerticalStackLayout Grid.Row="0"
+                                 Spacing="22"
+                                 VerticalOptions="Center">
+
+                <!-- LOGO / TÍTULO -->
+                <Label Text="OMNIMARKET"
+                       FontSize="26"
+                       FontAttributes="Bold"
+                       TextColor="#D4AF37"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Welcome back"
+                       FontSize="16"
+                       TextColor="#CCCCCC"
+                       HorizontalOptions="Center"/>
+
+                <!-- CARD LOGIN -->
+                <Frame BackgroundColor="#1A1A1A"
+                       CornerRadius="18"
+                       Padding="20"
+                       HasShadow="False">
+
+                    <VerticalStackLayout Spacing="14">
+
+                        <!-- EMAIL -->
+                        <Entry Placeholder="Email"
+                               Keyboard="Email"
+                               TextColor="White"
+                               PlaceholderColor="#777"/>
+
+                        <!-- SENHA -->
+                        <Entry Placeholder="Password"
+                               IsPassword="True"
+                               TextColor="White"
+                               PlaceholderColor="#777"/>
+
+                        <!-- ESQUECEU SENHA -->
+                        <Label Text="Forgot password?"
+                               TextColor="#D4AF37"
+                               FontSize="13"
+                               HorizontalOptions="End"/>
+
+                        <!-- BOTÃO ENTRAR -->
+                        <Button Text="LOGIN"
+                                BackgroundColor="#D4AF37"
+                                TextColor="#000"
+                                CornerRadius="14"
+                                HeightRequest="48"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </VerticalStackLayout>
+
+            <!-- FOOTER -->
+            <HorizontalStackLayout Grid.Row="1"
+                                   HorizontalOptions="Center"
+                                   Spacing="6">
+
+                <Label Text="Don’t have an account?"
+                       TextColor="#999"/>
+
+                <Label Text="Sign up"
+                       TextColor="#D4AF37"
+                       FontAttributes="Bold"/>
+
+            </HorizontalStackLayout>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
