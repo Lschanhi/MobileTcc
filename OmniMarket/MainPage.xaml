@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OmniMarket.MainPage"
+             BackgroundColor="#0E0E0E">
+
+    <!-- TÍTULO CENTRALIZADO -->
+    <NavigationPage.TitleView>
+        <Label Text="OMNIMARKET"
+               FontAttributes="Bold"
+               FontSize="18"
+               TextColor="#D4AF37"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </NavigationPage.TitleView>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="20">
+
+            <!-- SEARCH -->
+            <Frame BackgroundColor="#1A1A1A"
+                   CornerRadius="14"
+                   Padding="12">
+                <Entry Placeholder="Search products..."
+                       PlaceholderColor="#777"
+                       TextColor="White"/>
+            </Frame>
+
+            <!-- CATEGORIAS -->
+            <HorizontalStackLayout Spacing="12">
+
+                <Frame BackgroundColor="#1A1A1A"
+                        CornerRadius="18"
+                        Padding="16"
+                        WidthRequest="140"
+                        HasShadow="False">
+
+                    <VerticalStackLayout Spacing="8"
+                             HorizontalOptions="Center">
+
+                        <Image Source="teste.jpg"
+                                HeightRequest="90"
+                                Aspect="AspectFit"
+                               />
+
+                        <Label Text="Electronics"
+                                TextColor="#D4AF37"
+                                HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="#1A1A1A"
+                     CornerRadius="18"
+                     Padding="16"
+                     WidthRequest="140"
+                     HasShadow="False">
+
+                    <VerticalStackLayout Spacing="8"
+                          HorizontalOptions="Center">
+
+                        <Image Source="dotnet_bot.png"
+                             HeightRequest="90"
+                             Aspect="AspectFit"/>
+
+                        <Label Text="Electronics"
+                             TextColor="#D4AF37"
+                             HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="#1A1A1A"
+                     CornerRadius="18"
+                     Padding="16"
+                     WidthRequest="140"
+                     HasShadow="False">
+
+                    <VerticalStackLayout Spacing="8"
+                          HorizontalOptions="Center">
+
+                        <Image Source="dotnet_bot.png"
+                             HeightRequest="90"
+                             Aspect="AspectFit"/>
+
+                        <Label Text="Electronics"
+                             TextColor="#D4AF37"
+                             HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </HorizontalStackLayout>
+
+            <!-- PRODUTO -->
+            <Frame BackgroundColor="#1A1A1A"
+                   CornerRadius="16"
+                   Padding="16">
+
+                <VerticalStackLayout Spacing="10">
+                    <Image Source="headphone.png"
+                           HeightRequest="150"
+                           Aspect="AspectFit"/>
+
+                    <Label Text="Wireless Headphone"
+                           TextColor="White"
+                           FontSize="18"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="$99.99"
+                           TextColor="#D4AF37"
+                           FontSize="16"/>
+
+                    <Button Text="ADD TO CART"
+                            BackgroundColor="#D4AF37"
+                            TextColor="Black"
+                            CornerRadius="12"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
